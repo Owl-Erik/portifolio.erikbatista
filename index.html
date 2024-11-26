@@ -38,7 +38,7 @@
         }
 
         .logo img {
-            width: 50px;
+            width: 65px; /* Aumento de 30% */
             height: auto;
         }
 
@@ -49,24 +49,23 @@
 
         /* HERO SECTION */
         .hero {
-            text-align: center;
-            margin: 50px 20px 80px;
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
         }
 
-        .hero h1 {
-            font-size: 3rem;
-            text-transform: lowercase;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: #f8efe0;
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* PROJECTS SECTION */
         .section {
-            padding: 20px 40px;
+            padding: 50px 40px; /* Ajuste para manter consistência com "Sobre mim" */
         }
 
         .section h2 {
@@ -206,7 +205,9 @@
     <!-- Cabeçalho com links -->
     <header>
         <!-- Logo da página -->
-        <div class="logo"><img src="https://gruporojemac.dnsalias.com/candide/images/Alta/00-er/LOGO.png" alt="Logo"></div>
+        <div class="logo">
+            <img src="https://gruporojemac.dnsalias.com/candide/images/Alta/00-er/logo-FULL.png" alt="Logo">
+        </div>
         <!-- Links do menu -->
         <nav>
             <a href="#projects">Projetos</a>
@@ -217,36 +218,34 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>erik batista</h1>
-        <p>Designer Gráfico</p>
+        <video autoplay muted loop>
+            <source src="https://gruporojemac.dnsalias.com/candide/images/Alta/00-er/LOGO-animated.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
     </section>
 
     <!-- Seção Projetos -->
     <section id="projects" class="section">
         <h2>Projetos</h2>
         <div class="projects">
-            <!-- Projeto 1 -->
             <div class="project">
                 <img src="https://gruporojemac.dnsalias.com/candide/images/Alta/00-er/Natal%20Wolff.jpg" alt="Projeto 1">
                 <h3>Campanha de Natal Wolff</h3>
                 <p>Tornando a mágia do natal única</p>
                 <a href="https://www.behance.net/gallery/189956615/Christmas-Wolff-Natal-Wolff-Campaign" target="_blank">Ver mais</a>
             </div>
-            <!-- Projeto 2 -->
             <div class="project">
                 <img src="https://gruporojemac.dnsalias.com/candide/images/Alta/00-er/Pasoca%20Wolff.jpeg" alt="Projeto 2">
                 <h3>Campanha de Páscoa</h3>
                 <p>Campanha de páscoa da marca Wolff</p>
                 <a href="https://www.behance.net/gallery/167953345/WOLFF-Pascoa-Key-visual-Campaign" target="_blank">Ver mais</a>
             </div>
-            <!-- Projeto 3 -->
             <div class="project">
                 <img src="https://gruporojemac.dnsalias.com/candide/images/Alta/00-er/Recietas%20de%20mae.jpeg" alt="Projeto 3">
                 <h3>Receitas de Mães</h3>
                 <p>Campanha dis das mães da marca Lyor</p>
                 <a href="https://www.behance.net/gallery/183732149/Lyor-Receitas-de-Mae-Campanha-de-Dia-das-Maes" target="_blank">Ver mais</a>
             </div>
-            <!-- Projeto 4 -->
             <div class="project">
                 <img src="https://gruporojemac.dnsalias.com/candide/images/Alta/00-er/Linha%20matt.jpeg" alt="Projeto 4">
                 <h3>Mini Catálogo - Linha Matt - Wolff</h3>
